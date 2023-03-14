@@ -27,12 +27,12 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
+ defined('MOODLE_INTERNAL') || die();
 
-$plugin->version = 2020110300.01;  // Plugin version.
-$plugin->requires = 2017111300; // require Moodle version (3.4).
-$plugin->maturity = MATURITY_STABLE;
-$plugin->release = '3.9.0';
-$plugin->component = 'block_configurable_reports'; // Full name of the plugin (used for diagnostics)
-$plugin->cron      = 86400; // = Once in 24h, Set min time between cron executions.
-                            // Should probably be at night to off load CPU load.
+ $plugin->component = 'block_configurable_reports';
+ $plugin->version = 2023031400;
+ $plugin->requires = 2022041900; // Moodle 4.0
+ $plugin->maturity = MATURITY_STABLE;
+ $plugin->release = '3.9.0';
+ $plugin->cron = 86400; // Time between cron executions
+ 
